@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title> Curso Javascript</title>
+</head>
+    <body>
+        <script>
+       function genero(sexo) {
+          /* if(sexo === 'M') {
+               return 'Masculino';
+           } else if(sexo === 'F') {
+               return 'Feminino';
+           } else {
+               return 'Outro';
+           }
+       }*/
+       switch (sexo) {
+           case 'M':
+            return 'Masculino';
+           case 'F':
+            return 'Feminino';
+            default:
+            return 'Outro';
+       }
+    }
+       var resultado = genero('J');
+       console.log(resultado);
+
+        var sexo = 'F', idade = 10;
+        if( sexo === 'M' && idade >= 18){
+            console.log('OK');
+        } else {
+            console.log("BLOQUEADO");
+        }
+        if(sexo !== 'M'){
+            console.log("BLOQUEADO2");
+        }
+        sexo = 'F';
+        
+        /*function genero2(sexo){
+            if( sexo == 'M'){
+                return 'Masculino';
+            } else {
+                return 'Feminino';
+            }
+        }
+        CONSOLE.log(genero2('M'))*/ //ESSE IF ACIMA É A MSM COISA DA CONDIÇÃO TERNÁRIA ABAIXO
+        
+        var resul = (sexo == 'M') ? 'Masculino' : 'Feminino';
+        console.log(resul);
+
+        </script>
+    </body>
+</html>
