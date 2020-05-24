@@ -4,22 +4,34 @@
 </head>
     <body>
         <script>
-            skills = ["Javascript", "ReactJS", "React Native"];
+            skills = ["ReactJS", "React Native"];
             
             function temHabilidade(skills){
-                for(i = 0; i <= skills.length; i++){
+               /* for(i = 0; i <= skills.length; i++){
                     if(skills[i] == 'Javascript'){
                         return true;
                     } else {
                         return false;
                     }
+                }*/
+                var resultado = skills.indexOf("Javascript", 0);            
+                if(resultado == 0){
+                    return true;
+                }else {
+                    return false;
                 }
             }
             if(temHabilidade(skills)){
+                console.log("tem");
+            } else{
+                console.log("Nao tem");
+            }
+            
+            /*if(temHabilidade(skills)){
                 console.log("Eu sou demais.");
             } else {
                 console.log("Eu sou menos demais.");
-            }
+            }*/
             
             
         </script>
