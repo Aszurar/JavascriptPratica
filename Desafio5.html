@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title> Curso Javascript</title>
+</head>
+    <body>
+        <script>
+           
+            function Sorvetao(usuarios){
+                
+                //for(const valor of usuarios){ //na teoria percorre um array de objetos
+                    //console.log(usuarios.join(" ")); join reune os elemenos do array com algum separador indicado.
+                    //}
+                for(var i = 0; i < usuarios.length; i++){
+                    console.log("O",usuarios[i].nome, "possui as habilidades:", usuarios[i].habilidade.join(", ")); 
+                }                
+            }  
+            var usuarios = [         
+               {
+                   nome: "Diego",
+                   habilidade: ["Javascript", "ReactJS", "Redxu"]
+               },
+               {
+                   nome: "Gabriel",
+                   habilidade: ["VueJS", "Ruby on Rails", "Elixir"]
+               }
+            ];
+            Sorvetao(usuarios);
+        </script>
+    </body>
+</html>

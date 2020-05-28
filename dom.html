@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title> Curso Javascript</title>
+</head>
+    <body>
+        <div id = "app">
+            <input type="text" name = "nome"/>
+            <button class="botao">Adiciona</button>
+           
+        </div>
+           
+        <script>
+            //formas de buscar o input que quero.
+           //var inputElemento = document.getElementById('nome');
+           //var inputElemento = document.getElementsByTagName('input')[0];
+           //var inputElemento = document.getElementsByClassName('nome')[0];
+           //var inputElemento = document.querySelector('div#app input'); //retorna sempre um único elemento
+            //chamar uma função e a atrelar ao input dentro do corpop script:
+            var btElemento = document.querySelector('button');
+            var inputElemento = document.querySelector('input');
+            
+            btElemento.onclick = function(){
+                var text = inputElemento.value;
+                alert('O seguinte texto foi inserido:' + text);
+            }  
+           //console.log(inputElemento);
+        </script>
+    </body>
+</html>

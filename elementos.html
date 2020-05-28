@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title> Curso Javascript</title>
+</head>
+    <body>
+        <div id = "app">
+           <div class=" box"></div>
+        </div>
+           
+        <script>
+           
+           var linkElemento = document.createElement('a'); //criando o link
+           linkElemento.setAttribute('href', 'https://aszurar.tumblr.com'); //referenciando o link
+            
+           var textElemento = document.createTextNode('Tumblr');// Criando o texto do link
+           linkElemento.appendChild(textElemento);//Adicionando o texto no link
+
+           //Colocaqndo o link no html
+           var conteinerElemento = document.querySelector('#app');
+           conteinerElemento.appendChild(linkElemento);
+
+           var boxElemento = document.querySelector('.box');
+           boxElemento.style.width = 1080;
+           boxElemento.style.height = 1920;
+           boxElemento.style.backgroundColor = '#f00';
+
+
+        </script>
+    </body>
+</html>
